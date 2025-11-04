@@ -1,8 +1,15 @@
+import { HeroSection } from './HeroSection/HeroSection';
+import { ManualEntryButton } from './ManualEntryButton/ManualEntryButton';
+import { ScrapeDataButton } from './ScrapeDataButton/ScrapeDataButton';
+
 export const LandingPage = () => {
   return (
-    <div>
-      <h2 className="text-2xl font-bold">Landing Page</h2>
-      <p className="text-base">Landing page content goes here.</p>
-    </div>
+    <>
+      <HeroSection />
+      <div className="flex justify-center items-start space-x-10 mt-14">
+        <ManualEntryButton />
+        <ScrapeDataButton />
+      </div>
+    </>
   );
 };
